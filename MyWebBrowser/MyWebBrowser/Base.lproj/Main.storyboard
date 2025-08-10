@@ -3,6 +3,8 @@
     <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,11 +13,34 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyWebBrowser" customModuleProvider="target" sceneMemberID="viewController">
-                    <activityIndicatorView key="view" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="bZM-ke-Mhk">
+                    <view key="view" contentMode="scaleToFill" id="s4T-ex-I58">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="color" systemColor="linkColor"/>
-                    </activityIndicatorView>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9W-Cy-8jy">
+                                <rect key="frame" x="0.0" y="168" width="402" height="589"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="k4p-Kp-vYz">
+                                <rect key="frame" x="182.66666666666666" y="418.66666666666669" width="37" height="37"/>
+                                <color key="color" name="AccentColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pmx-HV-dab"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K9W-Cy-8jy" firstAttribute="leading" secondItem="pmx-HV-dab" secondAttribute="leading" id="AcZ-wc-UIn"/>
+                            <constraint firstItem="pmx-HV-dab" firstAttribute="trailing" secondItem="K9W-Cy-8jy" secondAttribute="trailing" id="CYJ-2V-Met"/>
+                            <constraint firstItem="pmx-HV-dab" firstAttribute="bottom" secondItem="K9W-Cy-8jy" secondAttribute="bottom" id="QZB-7V-SuQ"/>
+                            <constraint firstItem="k4p-Kp-vYz" firstAttribute="centerY" secondItem="s4T-ex-I58" secondAttribute="centerY" id="aFg-vx-89e"/>
+                            <constraint firstItem="k4p-Kp-vYz" firstAttribute="centerX" secondItem="s4T-ex-I58" secondAttribute="centerX" id="r7m-zK-MVc"/>
+                            <constraint firstItem="K9W-Cy-8jy" firstAttribute="top" secondItem="pmx-HV-dab" secondAttribute="top" id="ukz-qv-eQM"/>
+                        </constraints>
+                    </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="DiY-zw-pH9"/>
                         <barButtonItem systemItem="rewind" id="wdX-3T-E91"/>
@@ -56,8 +81,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
