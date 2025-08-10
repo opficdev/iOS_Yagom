@@ -3,7 +3,6 @@
     <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,35 +11,18 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyWebBrowser" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <activityIndicatorView key="view" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="bZM-ke-Mhk">
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eza-GR-dIf">
-                                <rect key="frame" x="0.0" y="168" width="402" height="589"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="eza-GR-dIf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A3p-gF-wAV"/>
-                            <constraint firstItem="eza-GR-dIf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b8j-AC-ejM"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eza-GR-dIf" secondAttribute="bottom" id="iHV-ue-IMi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eza-GR-dIf" secondAttribute="trailing" id="wRx-mJ-4Yk"/>
-                        </constraints>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="color" systemColor="linkColor"/>
+                    </activityIndicatorView>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="DiY-zw-pH9"/>
-                        <barButtonItem title="Item" id="wdX-3T-E91"/>
+                        <barButtonItem systemItem="rewind" id="wdX-3T-E91"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="vH5-vQ-yiM"/>
-                        <barButtonItem title="Item" id="6nr-ZF-Qg6"/>
+                        <barButtonItem systemItem="refresh" id="6nr-ZF-Qg6"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="OqS-Ej-MJk"/>
-                        <barButtonItem title="Item" id="L3u-8t-g3t"/>
+                        <barButtonItem systemItem="fastForward" id="L3u-8t-g3t"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="bfn-GW-SiR"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="ff9-jg-duf"/>
@@ -74,8 +56,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
