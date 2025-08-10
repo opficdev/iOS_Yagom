@@ -34,7 +34,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eza-GR-dIf" secondAttribute="trailing" id="wRx-mJ-4Yk"/>
                         </constraints>
                     </view>
-                    <toolbarItems/>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="DiY-zw-pH9"/>
+                        <barButtonItem title="Item" id="wdX-3T-E91"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="vH5-vQ-yiM"/>
+                        <barButtonItem title="Item" id="6nr-ZF-Qg6"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="OqS-Ej-MJk"/>
+                        <barButtonItem title="Item" id="L3u-8t-g3t"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="bfn-GW-SiR"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="ff9-jg-duf"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
