@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DF79F3C32E48D26000918D75 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF79F3C22E48D26000918D75 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DF3416552E4702B400F9312B /* MyWebBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWebBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF79F3C22E48D26000918D75 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF79F3C32E48D26000918D75 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				DF3416572E4702B400F9312B /* MyWebBrowser */,
+				DF79F3C12E48D25F00918D75 /* Frameworks */,
 				DF3416562E4702B400F9312B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +63,14 @@
 				DF3416552E4702B400F9312B /* MyWebBrowser.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DF79F3C12E48D25F00918D75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF79F3C22E48D26000918D75 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
