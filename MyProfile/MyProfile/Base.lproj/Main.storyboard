@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,34 +13,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyProfile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yagom" translatesAutoresizingMaskIntoConstraints="NO" id="QNt-hd-mG6">
-                                <rect key="frame" x="16" y="62" width="135" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yagom" translatesAutoresizingMaskIntoConstraints="NO" id="QNt-hd-mG6">
+                                <rect key="frame" x="16" y="140" width="120" height="115.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="TcA-Wl-fAX"/>
+                                    <constraint firstAttribute="width" secondItem="QNt-hd-mG6" secondAttribute="height" multiplier="83:80" id="bbD-XU-jY6"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32s-hU-Cgw">
-                                <rect key="frame" x="185" y="118" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32s-hU-Cgw">
+                                <rect key="frame" x="144" y="180.66666666666666" width="242" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GiL-mX-MxT">
-                                <rect key="frame" x="185" y="76" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GiL-mX-MxT">
+                                <rect key="frame" x="144" y="140" width="242" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ve-eV-z5Z">
-                                <rect key="frame" x="185" y="160" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ve-eV-z5Z">
+                                <rect key="frame" x="144" y="221.66666666666666" width="242" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fFe-46-RaG">
-                                <rect key="frame" x="33" y="202" width="321" height="567"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fFe-46-RaG">
+                                <rect key="frame" x="16" y="271.66666666666669" width="370" height="518.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -49,11 +48,30 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fFe-46-RaG" firstAttribute="leading" secondItem="QNt-hd-mG6" secondAttribute="leading" id="0Mt-d3-BNs"/>
+                            <constraint firstItem="6ve-eV-z5Z" firstAttribute="bottom" secondItem="QNt-hd-mG6" secondAttribute="bottom" id="0bU-P0-ljV"/>
+                            <constraint firstItem="32s-hU-Cgw" firstAttribute="centerY" secondItem="QNt-hd-mG6" secondAttribute="centerY" id="52q-cJ-MZn"/>
+                            <constraint firstItem="fFe-46-RaG" firstAttribute="top" secondItem="QNt-hd-mG6" secondAttribute="bottom" constant="16" id="9jm-sB-nbu"/>
+                            <constraint firstItem="6ve-eV-z5Z" firstAttribute="trailing" secondItem="fFe-46-RaG" secondAttribute="trailing" id="AYz-RG-F91"/>
+                            <constraint firstItem="6ve-eV-z5Z" firstAttribute="leading" secondItem="32s-hU-Cgw" secondAttribute="leading" id="ITg-Zd-bJG"/>
+                            <constraint firstItem="6ve-eV-z5Z" firstAttribute="trailing" secondItem="fFe-46-RaG" secondAttribute="trailing" id="KV5-zM-taK"/>
+                            <constraint firstItem="QNt-hd-mG6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LpY-WU-MFi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="fFe-46-RaG" secondAttribute="bottom" constant="16" id="MbA-zc-OJw"/>
+                            <constraint firstItem="GiL-mX-MxT" firstAttribute="leading" secondItem="QNt-hd-mG6" secondAttribute="trailing" constant="8" id="P4e-cZ-3rI"/>
+                            <constraint firstItem="6ve-eV-z5Z" firstAttribute="trailing" secondItem="32s-hU-Cgw" secondAttribute="trailing" id="UiW-7u-faF"/>
+                            <constraint firstItem="32s-hU-Cgw" firstAttribute="leading" secondItem="GiL-mX-MxT" secondAttribute="leading" id="fHC-sJ-Q6h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GiL-mX-MxT" secondAttribute="trailing" constant="16" id="kbB-KL-beg"/>
+                            <constraint firstItem="32s-hU-Cgw" firstAttribute="trailing" secondItem="GiL-mX-MxT" secondAttribute="trailing" id="m60-3a-8OP"/>
+                            <constraint firstItem="QNt-hd-mG6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="tQf-eM-0d3"/>
+                            <constraint firstItem="GiL-mX-MxT" firstAttribute="top" secondItem="QNt-hd-mG6" secondAttribute="top" id="x3o-5W-ZQD"/>
+                            <constraint firstItem="6ve-eV-z5Z" firstAttribute="trailing" secondItem="fFe-46-RaG" secondAttribute="trailing" id="yPt-q3-XyR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+            <point key="canvasLocation" x="133.59999999999999" y="4.0479760119940034"/>
         </scene>
     </scenes>
     <resources>
