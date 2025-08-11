@@ -82,3 +82,19 @@ graph TD
 
 - 뷰 계층 보기
 <img width="550" height="722" alt="Image" src="https://github.com/user-attachments/assets/47023cfa-7211-4f27-b40c-926b7a821ff3" />
+
+## H.I.G와 Auto Layout
+[**Human Interface Guidelines**](https://developer.apple.com/design/human-interface-guidelines)
+- 사용자와의 `상호작용`에 필요한 테크닉이나 개념을 정리해둔 문서
+- 개발자뿐만 아니라 디자이너도 참고해야할 문서임
+
+[**Auto Layout**](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html)
+- 화면의 크기나 디바이스의 방향에 구애받지 않고 뷰에 주어진 제약사항에 따라 화면 요소의 크기나 위치를 스스로 계산해서 화면에 배치하는 역할
+
+- **Safe Area**
+    - iOS 11부터 적용됨
+    - 컨텐츠가 나타나도 다른 구성 요소에 방해받지 않을 영역
+
+**Asset Catalog**
+- Asset을 비롯한 여러 리소스 파일을 관리하는 것을 도와줌 (ex: 이미지, 색상 등)
+
