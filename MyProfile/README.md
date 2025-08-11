@@ -75,3 +75,10 @@ graph TD
     UIViewController --> UINavigationController
     UIViewController --> UIView
 ```
+
+### View Hierarchy
+- 빌드한 후 화살표로 표시된 버튼을 탭하면 뷰 계층을 볼 수 있음
+<img width="318" height="140" alt="Image" src="https://github.com/user-attachments/assets/696ea4e4-c94f-43d0-936b-7816666cf0d2" />
+
+- 뷰 계층 보기
+<img width="550" height="722" alt="Image" src="https://github.com/user-attachments/assets/47023cfa-7211-4f27-b40c-926b7a821ff3" />
