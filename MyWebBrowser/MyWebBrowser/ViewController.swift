@@ -8,6 +8,7 @@
 import UIKit
 import WebKit
 
+// 웹 브라우저 화면을 담당하는 ViewController
 class ViewController: UIViewController {
     
     // MARK: - Properties
@@ -70,6 +71,7 @@ class ViewController: UIViewController {
     
 }
 
+// WKWebView의 네비게이션 이벤트를 처리하는 델리게이트 extension
 extension ViewController: WKNavigationDelegate {
     
     // MARK: WKNavigationDelegate

@@ -18,13 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var lastPageURL: URL?
         
     // MARK: - Methods
+    // // 앱이 런칭될 때 호출되는 메서드 (초기화 및 설정)
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
         self.lastPageURL = UserDefaults.standard.url(forKey: lastPageURLDefaultsKey)
+        
         return true
     }
     
+    // // 앱이 비활성화될 때 호출되는 메서드 (상태 저장 등)
     func applicationWillResignActive(_ application: UIApplication) {
         
         let userDefaults = UserDefaults.standard
@@ -33,13 +35,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // MARK: UISceneSession Lifecycle
-
+    // 새로운 Scene Session이 생성될 때 호출되는 메서드 (Scene 구성)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
+    // Scene Session이 삭제될 때 호출되는 메서드 (리소스 정리)
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
