@@ -1,5 +1,8 @@
 # 업 다운 게임
 
+## View
+<img width="402" height="874" alt="Image" src="https://github.com/user-attachments/assets/42f52ff5-ab5d-4acc-9781-063365362c49" />
+
 ## 인터페이스 구성하기
 - `Main.storyboard`에서 화면을 구성
 - `Label`, `Button` 등 다양한 UI 컴포넌트를 배치
