@@ -1,7 +1,7 @@
 # 업 다운 게임
 
-## View
-<img width="402" height="874" alt="Image" src="https://github.com/user-attachments/assets/42f52ff5-ab5d-4acc-9781-063365362c49" />
+## 뷰
+<img width="300" height="598" alt="Image" src="https://github.com/user-attachments/assets/fea40c89-88ff-4738-8b4b-7b9d6f3f6ed1" />
 
 ## 인터페이스 구성하기
 - `Main.storyboard`에서 화면을 구성
