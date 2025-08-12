@@ -50,3 +50,11 @@
 ```swift
 @IBAction private func tabBackground(_ sender: UITapGestureRecognizer) { ... }
 ```
+
+## Rename 메뉴
+### 위치
+- `Editor` 탭 -> `Refactor` 메뉴 -> `Rename`
+### 용도
+- ``Rename`` 메뉴는 변수, 함수, 클래스 등의 이름을 한 번에 변경할 때 사용
+- 코드 전체에서 해당 식별자를 자동으로 찾아 안전하게 이름을 수정
+- 실수로 놓치는 부분 없이 일관성 있게 리팩터링 가능
