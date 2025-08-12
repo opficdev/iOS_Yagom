@@ -28,7 +28,9 @@ final class ViewController: UIViewController {
     @IBAction func tabBackground(_ sender: UITapGestureRecognizer) {
         // inputField의 키보드를 숨김
         print("tap background view")
-        inputField.resignFirstResponder()
+//        self.inputField.resignFirstResponder()
+//         self.view.endEditing(true)
+         self.inputField.endEditing(true)
     }
     
     override func viewDidLoad() {
