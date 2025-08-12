@@ -67,6 +67,11 @@
                             <outletCollection property="gestureRecognizers" destination="HX3-tc-LZX" appends="YES" id="xjF-3i-NtI"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="FaY-38-Efb" id="LdH-tp-MIh"/>
+                        <outlet property="resultLabel" destination="FNZ-39-SL9" id="geS-o2-hdq"/>
+                        <outlet property="turnCountLabel" destination="LUb-T1-kr6" id="e51-IB-xHi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="HX3-tc-LZX"/>

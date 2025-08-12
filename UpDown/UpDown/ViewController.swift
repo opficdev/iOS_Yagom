@@ -7,13 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+    // MARK: - Properties
+    // MARK: IBOutlets
+    @IBOutlet private weak var resultLabel: UILabel!
+    @IBOutlet private weak var turnCountLabel: UILabel!
+    @IBOutlet private weak var inputField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    
 }
 
