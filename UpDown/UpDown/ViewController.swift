@@ -29,8 +29,9 @@ final class ViewController: UIViewController {
         // inputField의 키보드를 숨김
         print("tap background view")
 //        self.inputField.resignFirstResponder()
-//         self.view.endEditing(true)
-         self.inputField.endEditing(true)
+         self.view.endEditing(true) //  뷰에서 편집 중인 모든 포커싱을 제거
+//         self.inputField.endEditing(true)
+    }
     }
     
     override func viewDidLoad() {
