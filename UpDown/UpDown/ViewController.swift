@@ -25,6 +25,12 @@ final class ViewController: UIViewController {
         print("touch up reset button")
     }
     
+    @IBAction func tabBackground(_ sender: UITapGestureRecognizer) {
+        // inputField의 키보드를 숨김
+        print("tap background view")
+        inputField.resignFirstResponder()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
