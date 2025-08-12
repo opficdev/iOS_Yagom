@@ -37,6 +37,9 @@
                                 <rect key="frame" x="169.66666666666666" y="205" width="54" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="제출"/>
+                                <connections>
+                                    <action selector="touchUpSubmitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7zm-eK-p7f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhH-cE-a55">
                                 <rect key="frame" x="169.66666666666666" y="248" width="54" height="35"/>
@@ -44,6 +47,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="리셋">
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchUpResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EU3-Cf-YX7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
