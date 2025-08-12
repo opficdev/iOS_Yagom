@@ -14,3 +14,13 @@
 ```swift
   @IBOutlet private weak var titleLabel: UILabel!
 ```
+
+## IBAction
+- ``IBAction``은 코드와 인터페이스 빌더의 ``Button`` 등 UI 요소의 동작(이벤트)을 연결하는 역할
+- ``@IBAction`` 키워드를 사용하여 ``ViewController``에 메서드를 선언
+- 인터페이스 빌더에서 버튼 등 UI 요소의 이벤트(예: ``Touch Up Inside``)와 연결하여, 사용자가 UI를 조작할 때 해당 메서드가 실행됨
+- 예시:  
+```swift
+  @IBAction private func touchUpSubmitButton(_ sender: UIButton) { /* ... */ }
+```
+  
