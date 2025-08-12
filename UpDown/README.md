@@ -34,6 +34,14 @@
       // 탭 제스처가 감지되었을 때 실행되는 코드
   }
 ```
+### 종류
+- ``UITapGestureRecognizer``: 화면을 탭하는 제스처를 감지
+- ``UIPinchGestureRecognizer``: 두 손가락으로 집거나 벌리는 동작을 감지
+- ``UIRotationGestureRecognizer``: 두 손가락으로 회전하는 동작을 감지
+- ``UISwipeGestureRecognizer``: 손가락을 쓸어넘기는 동작을 감지
+- ``UIPanGestureRecognizer``: 손가락을 끌어서 이동하는 동작을 감지
+- ``UIScreenEdgePanGestureRecognizer``: 화면 가장자리에서 끌어오는 동작을 감지
+- ``UILongPressGestureRecognizer``: 화면을 길게 누르는 동작을 감지
 
 ## 메서드 코드 채우기
 - 사용자가 제출 버튼을 눌렀을 때 입력값을 확인하고 결과를 표시
