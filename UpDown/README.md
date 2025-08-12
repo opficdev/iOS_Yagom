@@ -24,3 +24,13 @@
   @IBAction private func touchUpSubmitButton(_ sender: UIButton) { /* ... */ }
 ```
   
+## Gesture Recognizer
+- ``Gesture Recognizer``는 ``Tap``, ``Swipe``, ``Pinch`` 등 사용자의 다양한 제스처를 감지하여 처리하는 역할
+- 인터페이스 빌더 또는 코드에서 ``UIGestureRecognizer``를 추가하여 사용할 수 있음
+- 제스처가 감지되면 연결된 ``Action`` 메서드가 실행됨
+- 예시:  
+```swift
+  @IBAction private func tabBackground(_ sender: UITapGestureRecognizer) {
+      // 탭 제스처가 감지되었을 때 실행되는 코드
+  }
+```
