@@ -34,3 +34,19 @@
       // 탭 제스처가 감지되었을 때 실행되는 코드
   }
 ```
+
+## 메서드 코드 채우기
+- 사용자가 제출 버튼을 눌렀을 때 입력값을 확인하고 결과를 표시
+```swift
+@IBAction private func touchUpSubmitButton(_ sender: UIButton) { ... }
+```
+
+- 사용자가 다시 시작 버튼을 눌렀을 때 게임을 초기화
+```swift
+@IBAction private func touchUpResetButton(_ sender: UIButton) { ... }
+```
+
+- 배경을 탭했을 때 키보드를 내림
+```swift
+@IBAction private func tabBackground(_ sender: UITapGestureRecognizer) { ... }
+```
