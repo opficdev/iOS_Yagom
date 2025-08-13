@@ -45,6 +45,8 @@ class ViewController: UIViewController {
     private let numberOfRGBStep = 256
     private let numberOfAlphaStep = 11
     
+    // viewWithTag는 오버헤드가 커서 메서드가 호출할때마다 실행되는것은 좋지않음
+    // 따라서 IBOutlet으로 직접 연결하거나, 슬라이더들을 배열이나 딕셔너리로 관리하면 더 좋은 성능을 낼 수 있음
     private func matchViewColorWithCurrentValue() {
         guard let redSlider = self.view.viewWithTag(ViewTag.sliderRed) as? UISlider,
               let greenSlider = self.view.viewWithTag(ViewTag.sliderGreen) as? UISlider,
