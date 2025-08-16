@@ -8,23 +8,85 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="TiQ-63-XdC">
             <objects>
-                <viewController id="Esg-GG-aDE" sceneMemberID="viewController">
+                <viewController id="Esg-GG-aDE" customClass="MainViewController" customModule="CompanionAnimals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F7s-GZ-ZgN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCD-6e-7eO">
+                                <rect key="frame" x="26" y="138" width="163.66666666666666" height="163.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JCD-6e-7eO" secondAttribute="height" multiplier="1:1" id="SoM-3C-huS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="dog"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsc-j1-aTC">
+                                <rect key="frame" x="193" y="262" width="159" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wsc-j1-aTC" secondAttribute="height" multiplier="1:1" id="A8j-ot-4yQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="hedgehog"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxq-Q5-nNw">
+                                <rect key="frame" x="26" y="262" width="163.66666666666666" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fxq-Q5-nNw" secondAttribute="height" multiplier="1:1" id="AKG-LP-cIb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="rabbit"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQi-pr-hq1">
+                                <rect key="frame" x="162" y="476" width="69" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="만든이"/>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpt-ms-42E">
+                                <rect key="frame" x="209.66666666666663" y="138" width="163.33333333333337" height="163.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zpt-ms-42E" secondAttribute="height" multiplier="1:1" id="T60-Ld-P8K"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="cat"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JKs-4h-w3b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fxq-Q5-nNw" firstAttribute="leading" secondItem="JCD-6e-7eO" secondAttribute="leading" id="GLz-rc-WXc"/>
+                            <constraint firstItem="Zpt-ms-42E" firstAttribute="leading" secondItem="JCD-6e-7eO" secondAttribute="trailing" constant="20" id="GbU-Tz-ZGh"/>
+                            <constraint firstItem="Zpt-ms-42E" firstAttribute="top" secondItem="JCD-6e-7eO" secondAttribute="top" id="Ggl-Jy-HFh"/>
+                            <constraint firstItem="JCD-6e-7eO" firstAttribute="top" secondItem="F7s-GZ-ZgN" secondAttribute="topMargin" constant="20" id="Slu-a9-sBt"/>
+                            <constraint firstItem="Zpt-ms-42E" firstAttribute="width" secondItem="JCD-6e-7eO" secondAttribute="width" id="d4R-kq-Mfe"/>
+                            <constraint firstItem="JKs-4h-w3b" firstAttribute="trailing" secondItem="Zpt-ms-42E" secondAttribute="trailing" constant="20" id="jRs-b1-pyZ"/>
+                            <constraint firstItem="JCD-6e-7eO" firstAttribute="leading" secondItem="JKs-4h-w3b" secondAttribute="leading" constant="26" id="sbG-Un-OKc"/>
+                            <constraint firstItem="Fxq-Q5-nNw" firstAttribute="trailing" secondItem="JCD-6e-7eO" secondAttribute="trailing" id="tr9-C4-Cke"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ggc-8F-hLJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-65" y="-24"/>
+            <point key="canvasLocation" x="-66.412213740458014" y="-24.647887323943664"/>
         </scene>
     </scenes>
     <resources>
+        <image name="cat" width="330" height="330"/>
+        <image name="dog" width="330" height="330"/>
+        <image name="hedgehog" width="330" height="330"/>
+        <image name="rabbit" width="330" height="330"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
